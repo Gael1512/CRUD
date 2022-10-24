@@ -10,7 +10,7 @@ $dat_cadastro = filter_input(INPUT_POST,'dat_cadastro');
 $status = filter_input(INPUT_POST,'status');
 $descricao = filter_input(INPUT_POST,'descricao');
 
-if($id && $nome && $valor && $dat_cadastro && $status && $descricao){
+if($id && $nome){
 	$sql = $pdo->prepare("UPDATE usuarios SET nome = :nome, valor = :valor, dat_cadastro = :dat_cadastro, status = :status, descricao = :descricao WHERE id = :id");
 	
 	$sql->bindvalue(':id', $id);
