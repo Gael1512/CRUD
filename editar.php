@@ -32,7 +32,7 @@ if($id){
 		Valor: <input type="number" id="valor" name="valor" value="<?=$usuarios['valor'];?>" step="0.010">
 	</label>
 	<label>
-		Data de Cadastro: <input type="date" name="data" value="<?=$usuarios['dat_cadastro'];?>" />
+		Data de Cadastro: <input type="date" name="dat_cadastro" value="<?=$usuarios['dat_cadastro'];?>" />
 	</label>
 	<br><br>
 	<label>
